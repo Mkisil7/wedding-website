@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Michael &amp; Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" role="navigation">
+            <div class="nav-brand">
+                <a href="index.html">Michael &amp; Partner</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html#story">Our Story</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="photos.html" class="active">Photos</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="guestbook.html">Guest Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Photo gallery content -->
+        <section id="photos" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <img src="images/camera.svg" alt="Camera icon" class="icon">
+                    <h2>Photos</h2>
+                </div>
+                <p class="section-intro">A glimpse of our journey together. We'll add more photos after the celebration!</p>
+                <div class="photo-grid">
+                    <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
+                    <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
+                    <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
+                    <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Michael &amp; Partner. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

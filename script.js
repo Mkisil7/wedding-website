@@ -15,6 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });
+
+        // Hide the mobile menu when a navigation link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                // Only collapse if menu is currently shown (mobile view)
+                if (navMenu.classList.contains('show')) {
+                    navMenu.classList.remove('show');
+                }
+            });
+        });
     }
 
     // Set current year in footer

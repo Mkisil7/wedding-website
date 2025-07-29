@@ -14,19 +14,21 @@
     <header class="site-header" id="home">
         <nav class="navbar" role="navigation">
             <div class="nav-brand">
-                <a href="#home">Michael &amp; Partner</a>
+                <!-- Brand links back to the landing page -->
+                <a href="index.html">Michael &amp; Partner</a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 &#9776;
             </button>
+            <!-- Updated navigation: each item links to its own page. 'Our Story' remains on the home page. -->
             <ul class="nav-menu">
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#details">Details</a></li>
-                <li><a href="#photos">Photos</a></li>
-                <li><a href="#registry">Registry</a></li>
-                <li><a href="#accommodations">Accommodations</a></li>
-                <li><a href="#rsvp">RSVP</a></li>
-                <li><a href="#guestbook">Guest Book</a></li>
+                <li><a href="index.html#story" class="active">Our Story</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="guestbook.html">Guest Book</a></li>
             </ul>
         </nav>
         <!-- Hero section with decorative background -->
@@ -64,134 +66,6 @@
         </div>
     </section>
 
-    <!-- Wedding Details section -->
-    <section id="details" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/calendar.svg" alt="Calendar icon" class="icon">
-                <h2>Wedding Details</h2>
-            </div>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <h3>Ceremony</h3>
-                    <p><strong>Date &amp; Time:</strong> October&nbsp;12,&nbsp;2025 at 3:00&nbsp;PM</p>
-                    <p><strong>Location:</strong> St. Nicholas Greek Orthodox Church</p>
-                    <p>The ceremony blends Jewish and Greek Orthodox traditions in a beautiful service. The church will welcome guests starting at 2:30&nbsp;PM.</p>
-                </div>
-                <div class="detail-item">
-                    <h3>Reception</h3>
-                    <p><strong>Time:</strong> 6:00&nbsp;PM</p>
-                    <p><strong>Location:</strong> Grand Resort Lagonissi</p>
-                    <p>Join us for an evening of dining, dancing and celebration on the Athenian Riviera. Cocktail hour begins at 5:30&nbsp;PM.</p>
-                </div>
-                <div class="detail-item">
-                    <h3>Dress Code</h3>
-                    <p>Formal chic with a touch of blue and gold. Feel free to express yourself while honouring both Jewish and Greek Orthodox cultures.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photo Gallery section -->
-    <section id="photos" class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/camera.svg" alt="Camera icon" class="icon">
-                <h2>Photos</h2>
-            </div>
-            <p class="section-intro">A glimpse of our journey together. We'll add more photos after the celebration!</p>
-            <div class="photo-grid">
-                <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
-                <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
-                <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
-                <div class="photo-item placeholder"><span>Photo Coming Soon</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Registry section -->
-    <section id="registry" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/gift.svg" alt="Gift icon" class="icon">
-                <h2>Registry</h2>
-            </div>
-            <p class="section-intro">Your presence is the greatest gift! If you wish to bless us further, we are registered at the following retailers.</p>
-            <div class="registry-list">
-                <a href="#" class="registry-card" aria-label="Amazon registry (link to be updated)">
-                    <h3>Amazon</h3>
-                    <p>Browse our registry on Amazon for household essentials and special keepsakes.</p>
-                </a>
-                <a href="#" class="registry-card" aria-label="Bed Bath &amp; Beyond registry (link to be updated)">
-                    <h3>Bed Bath &amp; Beyond</h3>
-                    <p>Help us furnish our first home with beautiful linens and kitchenware.</p>
-                </a>
-                <a href="#" class="registry-card" aria-label="Charity registry (link to be updated)">
-                    <h3>Charity</h3>
-                    <p>Instead of traditional gifts, you can donate to a charity close to our hearts.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Accommodations section -->
-    <section id="accommodations" class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/hotel.svg" alt="Hotel icon" class="icon">
-                <h2>Accommodations</h2>
-            </div>
-            <p class="section-intro">We have reserved room blocks at the following hotels near our venue. Mention our wedding when booking to receive special rates.</p>
-            <div class="accommodation-list">
-                <div class="accommodation-card">
-                    <h3>Grand Resort Lagonissi</h3>
-                    <p>Located on the water with breathtaking views, this five‑star resort is also our reception venue.</p>
-                    <p><strong>Phone:</strong> +30 123 456 789</p>
-                    <p><strong>Link:</strong> <a href="#">Website</a></p>
-                </div>
-                <div class="accommodation-card">
-                    <h3>Four Seasons Astir Palace Hotel Athens</h3>
-                    <p>Luxury hotel nestled along the Athenian Riviera, minutes away from the ceremony site.</p>
-                    <p><strong>Phone:</strong> +30 987 654 321</p>
-                    <p><strong>Link:</strong> <a href="#">Website</a></p>
-                </div>
-                <div class="accommodation-card">
-                    <h3>Local Boutique Hotel</h3>
-                    <p>Charming boutique hotel in the heart of Athens, perfect for exploring the city.</p>
-                    <p><strong>Phone:</strong> +30 111 222 333</p>
-                    <p><strong>Link:</strong> <a href="#">Website</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RSVP section: anchors to separate page -->
-    <section id="rsvp" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/envelope.svg" alt="Envelope icon" class="icon">
-                <h2>RSVP</h2>
-            </div>
-            <p class="section-intro">Kindly respond by August&nbsp;1,&nbsp;2025. We look forward to celebrating with you!</p>
-            <div class="rsvp-action">
-                <a href="rsvp.html" class="btn-primary">RSVP Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guestbook section: link to page -->
-    <section id="guestbook" class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <img src="images/book.svg" alt="Book icon" class="icon">
-                <h2>Guest Book</h2>
-            </div>
-            <p class="section-intro">Leave us a note or a piece of advice! Read messages from other guests and share your love.</p>
-            <div class="guestbook-action">
-                <a href="guestbook.html" class="btn-secondary">Sign Our Guest Book</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="site-footer">

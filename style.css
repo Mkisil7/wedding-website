@@ -517,6 +517,20 @@ p {
     .hero-date {
         font-size: 0.875rem;
     }
+
+    /* Reduce section padding on tablets and small laptops */
+    .section {
+        padding: 2rem 0;
+    }
+
+    /* Force grids to single column for better readability */
+    .timeline,
+    .details-grid,
+    .photo-grid,
+    .registry-list,
+    .accommodation-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -525,5 +539,14 @@ p {
     }
     h2 {
         font-size: 1.5rem;
+    }
+
+    /* Further adjust hero height and branding on very small devices */
+    .hero {
+        height: 60vh;
+        min-height: 300px;
+    }
+    .nav-brand a {
+        font-size: 1.25rem;
     }
 }
