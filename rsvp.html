@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP · Michael &amp; Partner's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" role="navigation">
+            <div class="nav-brand"><a href="index.html">Michael &amp; Partner</a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html#story">Our Story</a></li>
+                <li><a href="index.html#details">Details</a></li>
+                <li><a href="index.html#photos">Photos</a></li>
+                <li><a href="index.html#registry">Registry</a></li>
+                <li><a href="index.html#accommodations">Accommodations</a></li>
+                <li><a href="#" class="active">RSVP</a></li>
+                <li><a href="guestbook.html">Guest Book</a></li>
+            </ul>
+        </nav>
+        <section class="hero" aria-label="RSVP hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">RSVP</h1>
+                <p class="hero-subtitle">We can't wait to celebrate with you!</p>
+            </div>
+        </section>
+    </header>
+    <main class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <img src="images/envelope.svg" alt="Envelope icon" class="icon">
+                <h2>Will you be joining us?</h2>
+            </div>
+            <p class="section-intro">Please fill out the form below to let us know if you will be able to attend our wedding. RSVP by August&nbsp;1,&nbsp;2025.</p>
+            <form id="rsvp-form" class="form">
+                <div class="form-group">
+                    <label for="rsvp-name">Name<span aria-hidden="true">*</span></label>
+                    <input type="text" id="rsvp-name" name="name" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-email">Email<span aria-hidden="true">*</span></label>
+                    <input type="email" id="rsvp-email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-attendance">Attendance<span aria-hidden="true">*</span></label>
+                    <select id="rsvp-attendance" name="attendance" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="accept">Accepts with pleasure</option>
+                        <option value="decline">Regretfully declines</option>
+                        <option value="maybe">Maybe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-guests">Number of Guests<span aria-hidden="true">*</span></label>
+                    <input type="number" id="rsvp-guests" name="guests" min="1" max="10" required value="1">
+                </div>
+                <div class="form-group">
+                    <label for="rsvp-message">Message</label>
+                    <textarea id="rsvp-message" name="message" rows="4" placeholder="Leave us a note"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit RSVP</button>
+            </form>
+            <div id="rsvp-response" class="form-response"></div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Michael &amp; Partner. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

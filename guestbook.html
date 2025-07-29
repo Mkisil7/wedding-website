@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book · Michael &amp; Partner's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" role="navigation">
+            <div class="nav-brand"><a href="index.html">Michael &amp; Partner</a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html#story">Our Story</a></li>
+                <li><a href="index.html#details">Details</a></li>
+                <li><a href="index.html#photos">Photos</a></li>
+                <li><a href="index.html#registry">Registry</a></li>
+                <li><a href="index.html#accommodations">Accommodations</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="#" class="active">Guest Book</a></li>
+            </ul>
+        </nav>
+        <section class="hero" aria-label="Guestbook hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Guest Book</h1>
+                <p class="hero-subtitle">Share your wishes and advice</p>
+            </div>
+        </section>
+    </header>
+    <main class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <img src="images/book.svg" alt="Book icon" class="icon">
+                <h2>Leave a Note</h2>
+            </div>
+            <p class="section-intro">We'd love to hear from you! Please sign our guest book by leaving us a message below. Your words will be cherished for years to come.</p>
+            <form id="guestbook-form" class="form">
+                <div class="form-group">
+                    <label for="guestbook-name">Name<span aria-hidden="true">*</span></label>
+                    <input type="text" id="guestbook-name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="guestbook-message">Message<span aria-hidden="true">*</span></label>
+                    <textarea id="guestbook-message" name="message" rows="4" required placeholder="Your message to us"></textarea>
+                </div>
+                <button type="submit" class="btn-secondary">Sign Guest Book</button>
+            </form>
+            <div id="guestbook-entries" class="guestbook-entries"></div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Michael &amp; Partner. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
